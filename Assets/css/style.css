@@ -68,6 +68,11 @@ nav ul a {
   display: none;
 }
 
+.project-active a,
+.home-active a {
+  color: red;
+}
+
 .btn__contact {
   display: block;
 }
@@ -371,6 +376,7 @@ select {
   header nav ul a {
     margin: 1rem;
     width: 100%;
+    color: #000000 !important;
   }
 
   .btn__contact {
