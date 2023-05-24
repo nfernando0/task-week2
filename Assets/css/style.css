@@ -31,9 +31,13 @@ body {
 
 header {
   display: flex;
+  position: relative;
   justify-content: space-between;
-  padding: 20px 7%;
+  right: 0;
+  top: 0;
+  left: 0;
   background-color: #eeecec;
+  padding: 10px 7%;
 }
 
 nav {
@@ -43,6 +47,7 @@ nav {
 
 nav ul {
   display: flex;
+  margin: 0;
 }
 nav ul a {
   margin: 0 15px;
@@ -58,6 +63,18 @@ nav ul a {
   cursor: pointer;
 }
 
+/* Nav Responsive */
+.navbar__menu {
+  display: none;
+}
+
+.btn__contact {
+  display: block;
+}
+.btnContact {
+  display: none;
+}
+
 /* Contact */
 .contact h1 {
   text-align: center;
@@ -65,7 +82,7 @@ nav ul a {
 }
 
 form {
-  width: 30%;
+  width: 50%;
   margin: auto;
 }
 
@@ -91,6 +108,9 @@ select {
 .msg {
   border-radius: 10px;
   margin-top: 5px;
+  resize: none;
+  width: 100%;
+  height: 5rem;
 }
 
 .btnSubmit {
@@ -105,12 +125,16 @@ select {
 
 /* Card */
 
-.card .container {
+.cards {
+  margin: auto;
+}
+.cards .container {
   background-color: #ffffff;
   box-sizing: 0 0 15px #d0d0d0;
   display: flex;
-  padding: 2rem 2.5rem;
-  margin: 50px 50px;
+  padding: 2rem;
+  margin: 100px auto;
+  /* margin: 100px 50px; */
   width: 80%;
 }
 
@@ -129,7 +153,7 @@ select {
   flex: 50%;
 }
 
-.card img {
+.cards .card img {
   width: 100%;
 }
 
@@ -310,4 +334,66 @@ select {
 
 .project__card__body .body {
   margin: 1rem 0;
+}
+
+/* Responsive */
+@media (max-width: 780px) {
+  .cards .container {
+    display: block;
+    /* width: 100%; */
+  }
+
+  header .navbar__menu {
+    display: block;
+  }
+  header nav ul {
+    position: absolute;
+    top: -1000%;
+    display: block;
+    width: 85%;
+    text-align: center;
+    background-color: lightblue;
+    border: 1px solid #ffffff;
+  }
+  header nav ul.active {
+    top: 100%;
+  }
+  header nav ul li.active {
+    width: 100%;
+    background-color: red;
+  }
+  header nav ul li {
+    border: 1px solid #ffffff;
+  }
+  header nav ul a {
+    margin: 1rem;
+    width: 100%;
+  }
+
+  .btn__contact {
+    display: none;
+  }
+  .btnContact {
+    display: block;
+    margin: 0;
+  }
+  .project .container {
+    padding: 1rem 0;
+  }
+
+  .project form {
+    width: 80%;
+  }
+
+  .myProjects .project__card {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .contact {
+    margin: 2rem;
+  }
+  .contact form {
+    width: 100%;
+  }
 }

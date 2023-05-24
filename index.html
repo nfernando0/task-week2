@@ -22,18 +22,29 @@
     <header>
       <nav>
         <img src="/Assets/img/logo.png" alt="" />
-        <ul>
-          <li><a href="/index.html">Home</a></li>
+        <ul class="navbar__ul">
+          <li class="active"><a href="/index.html">Home</a></li>
           <li><a href="/content/projects.html">My Project</a></li>
+          <li><a href="/content/contact.html" class="btnContact">Contact Me</a></li>
         </ul>
       </nav>
-      <a href="/content/contact.html" class="btn">Contact Me</a>
+      <a href="/content/contact.html" class="btn btn__contact">Contact Me</a>
+      <a href="#" class="navbar__menu" id="navbar__menu">
+        <i class="fa-solid fa-bars fa-2x"></i>
+      </a>
     </header>
     <!-- End Navbar -->
 
     <!-- Card -->
-    <section class="card">
+    <section class="cards">
       <div class="container">
+        <div class="right">
+          <div class="card">
+            <img src="/Assets/img/image.jpg" alt="" />
+            <h2>Fernando</h2>
+            <p>Fullstack Developer</p>
+          </div>
+        </div>
         <div class="left">
           <h2>Hi Welcome to my hut</h2>
           <p>
@@ -49,14 +60,9 @@
             <a href="#"> <i class="fa-brands fa-twitter"></i></a>
           </div>
         </div>
-        <div class="right">
-          <div class="card">
-            <img src="/Assets/img/image.jpg" alt="" />
-            <h2>Fernando</h2>
-            <p>Fullstack Developer</p>
-          </div>
-        </div>
       </div>
     </section>
+
+    <script src="/Assets/js/index.js"></script>
   </body>
 </html>

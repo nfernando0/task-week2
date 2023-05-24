@@ -11,6 +11,8 @@ function addBlog(event) {
   let desc = document.getElementById("desc").value;
   let image = document.getElementById("upload").files;
 
+  
+
   const jsIcon = '<i class="fa-brands fa-square-js fa-xl fa-fw"></i>';
   const reactIcon = '<i class="fa-brands fa-react fa-xl fa-fw"></i>';
   const phpIcon = '<i class="fa-brands fa-php fa-xl fa-fw"></i>';
@@ -68,6 +70,9 @@ function getFullTime(time) {
 
   return `${date} ${monthName[monthIndex]} ${year} ${hours}:${minutes} WIB`;
 }
+
+
+
 
 function getDistanceTime(time) {
   let timeNow = new Date();
