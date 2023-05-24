@@ -358,10 +358,13 @@ select {
   header nav ul.active {
     top: 100%;
   }
-  header nav ul li.active {
+  header nav ul li.active,
+  header nav ul li.project-active,
+  header nav ul li.contact-active {
     width: 100%;
     background-color: red;
   }
+
   header nav ul li {
     border: 1px solid #ffffff;
   }
