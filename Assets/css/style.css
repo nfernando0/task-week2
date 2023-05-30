@@ -203,4 +203,9 @@ nav ul a {
   .contact form {
     width: 100%;
   }
+
+  .testimonials {
+    flex-direction: column;
+    width: 80% !important;
+  }
 }

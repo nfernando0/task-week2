@@ -21,6 +21,7 @@ function addBlog(event) {
   let diff = new Date(end - start);
   let mounth = diff.getMonth();
   let days = diff.getDate();
+  
 
   let js = document.getElementById("tech_js").checked ? jsIcon : "";
   let react = document.getElementById("tech_react").checked ? reactIcon : "";
